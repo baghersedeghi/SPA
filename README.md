@@ -1,16 +1,71 @@
-# React + Vite
+# React SPA — Users & Posts
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A multi-page single-page application built with **React** and **React Router**, designed to practice real-world frontend architecture, API-driven pages, reusable components, and dynamic routing.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Home page with shared navigation
+- Users listing and dynamic user detail pages
+- Posts listing and dynamic post detail pages
+- Client-side routing with dynamic URL parameters
+- Reusable React components and page-level organization
+- Custom data-fetching hook (`useGet`)
+- API-driven content
+- Toast notifications for user feedback
+- Responsive frontend UI
 
-## React Compiler
+## 🧰 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- React Router
+- JavaScript (ES6+)
+- CSS
+- React Toastify
+- REST API
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+src/
+├── components/
+├── hooks/
+│   └── useGet.js
+├── pages/
+│   ├── Home.jsx
+│   ├── user/
+│   └── post/
+├── App.jsx
+└── main.jsx
+```
+
+## 🚀 Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+For a production build:
+
+```bash
+npm run build
+```
+
+## 🌐 Live Demo
+
+https://effortless-pie-c00039.netlify.app/
+
+## 🎯 What I Practiced
+
+- Structuring a React application into reusable components and pages
+- Building nested and dynamic routes such as `/users/:id` and `/posts/:id`
+- Reusing API-fetching logic through a custom hook
+- Handling API-driven UI states
+- Building a maintainable frontend project structure
+
+## 👨‍💻 Author
+
+**Bagher Sedeghi**
+
+GitHub: https://github.com/baghersedeghi
